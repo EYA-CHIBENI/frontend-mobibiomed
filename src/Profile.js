@@ -8,7 +8,7 @@ const Profile = () => {
 
   useEffect(() => {
     dispatch(currentuser())
-  }, [])
+  }, [dispatch])
   const user = useSelector(state => state.UsersReducer.user)
   return (
     <div className="profile-page">
